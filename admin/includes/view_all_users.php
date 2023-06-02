@@ -8,9 +8,6 @@
                     <th>Status</th>
                     <th>In Response to</th>
                     <th>Date</th>
-                    <th>Approve</th>
-                    <th>Unapprove</th>
-                    <th>Delete</th>
                   </tr>
                 </thread>
                 <tbody>
