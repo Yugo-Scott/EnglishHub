@@ -60,6 +60,7 @@
   $update_post = mysqli_query($connection, $query);
   comfirm($update_post);
   echo "HI";
+  header("Location: posts.php");
 }
 
 

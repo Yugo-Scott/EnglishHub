@@ -40,6 +40,7 @@ if(isset($_POST['create_post'])){
     $query .= "VALUES({$post_category_id}, '{$post_title}', '{$post_author}', now(), '{$post_image}', '{$post_content}', '{$post_tags}', 0, '{$post_status}', '{$post_url}') ";
     $create_post_query = mysqli_query($connection, $query);
     comfirm(($create_post_query));
+    header("Location: posts.php");
 
 
   }
