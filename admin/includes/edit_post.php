@@ -76,7 +76,7 @@
      <div class="form-group">
      <label for="category">Post Category</label>
      <div>
-      <select name="post_category" id="post_category">
+      <select name="post_category" class="form-control" id="post_category">
         <?php
         $query = "SELECT * FROM categories";
         $select_categories = mysqli_query($connection, $query);
@@ -99,7 +99,16 @@
 
       <div class="form-group">
          <label for="post_status">Post Status</label>
-         <input value="<?php echo $post_status; ?>" type="text" class="form-control" name="post_status">
+        <select name="post_status" class="form-control" id="">
+          <?php
+          echo "<option value='{$post_status}'>{$post_status}</option>";
+          if($post_status == 'published'){
+            echo "<option value='draft'>draft</option>";
+          } else {
+            echo "<option value='published'>published</option>";
+          }
+          ?>
+        </select>
      </div>
      
      

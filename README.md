@@ -6,9 +6,12 @@
 ​
 ## ②工夫した点・こだわった点
 - 前回の続き
-- 検索機能やカテゴリやpost個別表示やcomment機能を追加した
+- login、logout機能の実装
 ​
 ## ③難しかった点・次回トライしたいこと(又は機能)
-- 諸々実装したいことが出てきたので継続してきます。
+- 
 ​
 ## ④質問・疑問・感想、シェアしたいこと等なんでも
+- https://startbootstrap.com/
+- https://developers.google.com/chart/interactive/docs/gallery/columnchart?hl=ja
+​

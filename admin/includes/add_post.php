@@ -62,8 +62,8 @@ if(isset($_POST['create_post'])){
       </div> -->
       <div class="form-group">
        <label for="category">Category</label>
-       <select name="post_category" id="">
-           
+       <select name="post_category"  class="form-select form-control" id="">
+        <option selected>Open this select menu</option>
 <?php
 
         $query = "SELECT * FROM categories";
@@ -95,7 +95,11 @@ if(isset($_POST['create_post'])){
 
        <div class="form-group">
           <label for="post_status">Post Status</label>
-          <input type="text" class="form-control" name="post_status">
+          <select class="form-select form-control" name="post_status">
+            <option selected>Open this select menu</option>
+            <option value="draft">Draft</option>
+            <option value="published">Published</option>
+          </select>
       </div>
       
       
@@ -116,9 +120,8 @@ if(isset($_POST['create_post'])){
       </div>
       
       <div class="form-group">
-         <label for="post_content">Post Content</label>
-         <textarea class="form-control "name="post_content" id="" cols="30" rows="10">
-         </textarea>
+         <label for="summernote">Post Content</label>
+         <textarea class="form-control "name="post_content" id="summernote" cols="30" rows="10"></textarea>
       </div>
       
       
